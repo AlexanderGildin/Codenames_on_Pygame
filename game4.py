@@ -37,6 +37,7 @@ if __name__ == '__main__':
     for i in temp_wds:
         words.add(i.rstrip())
     words = list(words)
+    random.shuffle(list)
     pygame.init()
     width, height = 1200, 900
     game_board = t_board(width, height,"codenames on pygame")
